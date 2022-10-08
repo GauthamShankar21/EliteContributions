@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner s=new Scanner(System.in);
+	    System.out.println("Emter a number:");
+	    int n=s.nextInt();
+	    
+	    boolean b=true;
+	    while(b)
+	    {
+	        int sum=0;
+	        while(n>0)
+	        {
+	            int temp=n%10;
+	            sum=sum+temp*temp;
+	            n=n/10;
+	        }
+	        if(sum==1)
+	        {
+	            System.out.println("Happy number");
+	            b=false;
+	        }
+	        else if(sum==4)
+	        {
+	           System.out.println(" Not Happy number"); 
+	        }
+	        else 
+	        {
+	            n=sum;
+	        }
+	    }
+	}
+	
+}
