@@ -1,0 +1,23 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	   int n=16461;
+	   int temp=n;
+	   int rev=0;
+	   while(n!=0)
+	   {
+	       int rem=n%10;
+	       n=n/10;
+	       rev=rev*10+rem;
+	       
+	   }
+	   if(temp==rev)
+	   {
+	       System.out.println(temp+" is palindrome number");
+	   }
+	   else
+	       System.out.println(temp+" is not palindrome number");
+	}
+	   
+}
