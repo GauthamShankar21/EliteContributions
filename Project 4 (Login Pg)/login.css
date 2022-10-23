@@ -1,0 +1,51 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image:url(Eve.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.LogBox{
+    padding: 50px 20px;
+    width:25%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity:85% ;
+}
+
+
+.Loginh{
+    text-align: center;
+    color: black;
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.emul{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: grey;
+    font-size: 90%;
+
+}
+.press{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: grey;
+    font-size: 90%;
+
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color:purple;
+    color:#fff;
+   border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
