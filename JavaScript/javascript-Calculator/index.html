@@ -1,0 +1,72 @@
+<!-- Make a calculator website
+    that utilizes every learned 
+    aspect of HTML, CSS, and JAVASCRIPT. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- 
+            elements for numbers, operations, and other details.
+            if able, make it such that the numbers are dynamic and are
+            automatically read on any chanegs to the operand field
+         -->
+
+         <div class="left-side">
+            <div id="result-Section" class="result-Section">
+            </div>
+
+            <!-- perhaps add the
+            strike through line here.. ? -->
+
+            <div class="number-Section">
+                <div class="row">
+                    <div onclick="passParam(this.innerText)">C</div>
+                    <div onclick="passParam(this.innerText)">+/-</div>
+                    <div onclick="passParam(this.innerText)">%</div>
+                    <div onclick="passParam(this.innerText)" class="otherBlue">÷</div>
+                </div>
+                
+                <div class="row">
+                    <div onclick="passParam(this.innerText)">7</div>
+                    <div onclick="passParam(this.innerText)">8</div>
+                    <div onclick="passParam(this.innerText)">9</div>
+                    <div onclick="passParam(this.innerText)" class="otherBlue">x</div>
+                </div>
+                
+                <div class="row">
+                    <div onclick="passParam(this.innerText)">4</div>
+                    <div onclick="passParam(this.innerText)">5</div>
+                    <div onclick="passParam(this.innerText)">6</div>
+                    <div onclick="passParam(this.innerText)" class="otherBlue">+</div>
+                </div>
+                
+                <div class="row">
+                    <div onclick="passParam(this.innerText)">1</div>
+                    <div onclick="passParam(this.innerText)">2</div>
+                    <div onclick="passParam(this.innerText)">3</div>
+                    <div onclick="passParam(this.innerText)" class="otherBlue">-</div>
+                </div>
+
+                <div class="row 5">
+                    <div onclick="passParam(this.innerText)" class="zeroDig">0</div>
+                    <div onclick="passParam(this.innerText)"><</div>
+                    <div onclick="passParam(this.innerText)">.</div>
+                    <div onclick="passParam(this.innerText)" class="equal otherBlue">=</div>
+                </div>
+            </div>
+
+            <div class="">
+
+            </div>
+
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
