@@ -13,4 +13,4 @@ def sieve(n):
     print(f'Prime numbers: {primeL}')
 
 
-sieve(20)
+sieve(int(input())
