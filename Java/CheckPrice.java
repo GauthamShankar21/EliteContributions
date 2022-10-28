@@ -23,4 +23,4 @@ public class CheckPrice {
                 System.out.println("The third product is cheaper:  " + price03);
             }
         }
-    }
+}
