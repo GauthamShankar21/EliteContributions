@@ -102,6 +102,5 @@ while True:
  choice = input("Enter choice(+,-,*,/,^,%,#,$,?): ")
  print(choice)
  if(select_op(choice) == -1):
- #program ends here
  print("Done. Terminating")
  exit()
