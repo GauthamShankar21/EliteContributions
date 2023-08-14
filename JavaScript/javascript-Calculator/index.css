@@ -1,0 +1,62 @@
+/* font imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+/* main logic */
+
+body {
+    background-color: rgb(247, 251, 255);
+    
+}
+
+.result-Section {
+    position: relative;
+    font-family: "Poppins";
+    font-size: 3.66vw;
+    color: #6f6f6f;
+    top: 6.5vh;
+    left: 9vw;
+    height: 14.3vh;
+    line-height: 14.3vh;
+    width: 26.3vw;
+    border: solid 1px;
+    border-radius: 15vw;
+    box-shadow: 5px 3px 10px 2.5px #6f6f6f;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.number-Section {
+    user-select: none;
+    font-family: 'Poor Story';
+    font-size: 2.65vw;
+    position: absolute;
+    left: 9.73vw;
+    top: 22.5vh;
+    color: #808080;
+    cursor: default;
+}
+
+.row div {
+    display: inline-block;
+    text-align: center;
+    margin: 2.07vh 0.7vw 0 0;
+    width: 4.94vmax;
+    height: 4.94vmax;
+    line-height: 4.94vmax;
+    border: solid #D6F3FF;
+    border-radius: 1.38vmin;
+    cursor: pointer;
+}
+
+.otherBlue {
+    vertical-align: top;
+    font-family: "Montserrat";
+    border: solid #D9EFFF;
+    color: #92CEFE;
+    text-align: center;
+}
+
+
