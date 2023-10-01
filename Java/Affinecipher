@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class affinecipher {
+
+    public static void main(String[]Args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a paraphrase: ");
+        String input_string = sc.nextLine();
+        sc.close();
+        String normaltext = input_string;
+        String encrypttext = encrypt(normaltext);
+        String decrypted = decrypt(encrypttext);
+        System.out.println("Encryptedtext: " + encrypttext);
+        System.out.println("Decrypted text: " + decrypted);
+    }
+    public static String encrypt(String normaltext) {
+
+        int k1 = 7;
+        int k2 = 2;
+        char[] encrypttext = new char[normaltext.length()];
+        for (int i = 0; i < normaltext.length(); i++) {
+            char character_check = normaltext.charAt(i);
+            if (Character.isUpperCase(character_check)){
+                int k3 = normaltext.charAt(i) - 'A';
+                int encrypted = (k3 * k1 +k2) % 26;
+                encrypttext[i] = (char)(encrypted + 'A');
+            } else {
+                int k3 = normaltext.charAt(i) - 'a';
+                int encrypted = (k3 * k1 +k2) % 26;
+                encrypttext[i] = (char)(encrypted + 'a');
+            }
+        }
+        return new String(encrypttext);
+    }
+    public static String decrypt(String encrypttext) {
+        int k1 = 7;
+        int k2 = 2;
+        char[] normaltext = new char[encrypttext.length()];
+        int k1_inverse = 0;
+        for (int i = 0; i < 26; i++) {
+            if ((k1 * i) % 26 == 1) {
+                k1_inverse = i;
+                break;
+            }
+        }
+        for (int i = 0; i < encrypttext.length(); i++) {
+            char character_check = encrypttext.charAt(i);
+            if (Character.isUpperCase(character_check)){
+                int k3 = encrypttext.charAt(i) - 'A';
+                int decrypted = ((k3 - k2 + 26)* k1_inverse) % 26;
+                normaltext[i] = (char)(decrypted + 'A');
+
+            } else {
+                int k3 = encrypttext.charAt(i) - 'a';
+                int decrypted = ((k3 - k2 + 26)* k1_inverse) % 26;
+                normaltext[i] = (char)(decrypted + 'a');
+            }
+        }
+        return new String(normaltext);
+    }
+}
