@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <qrencode.h>
+
+int main() {
+  QRcode *qr = QRcode_encodeString("Hello, World!", 0, QR_ECLEVEL_L, QR_MODE_8, 1);
+
+  unsigned char *data = qr->data;
+  int width = qr->width;
+
+  for (int y = 0; y < width; y++) {
+    for (int x = 0; x < width; x++) {
+      putchar(data[y * width + x] ? '#' : ' ');
+    }
+    putchar('\n');
+  }
+
+  QRcode_free(qr);
+
+  return 0;
