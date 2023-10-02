@@ -14,6 +14,10 @@ public class BinarySearch {
       }
 
     public static int binarySearch(int arr[], int first, int last, int key){  
+          if (arr == null || arr.length == 0) {
+              throw new IllegalArgumentException("Input array cannot be null or empty.");
+          }
+        
           if (last >= first){  
               int mid = first + (last - first) / 2;  
 
