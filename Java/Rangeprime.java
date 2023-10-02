@@ -10,6 +10,12 @@ System.out.println("Enter the upper range");
 int upp=sc.nextInt();
 int check;
 
+if (upp < low) {
+    System.out.println("Upper range cannot be less than lower range. Please enter valid input.");
+    return;
+}
+
+System.out.println("Prime numbers in the range [" + low + ", " + upp + "]:");
 for(int i=low;i<=upp;i++)
 {
 int count=0;
