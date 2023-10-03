@@ -5,7 +5,13 @@ int main()
 {
     int size;
     printf("Enter the size of the array: ");
-    scanf("%d",&size);
+
+    // Validate input for size
+    if (scanf("%d", &size) != 1 || size <= 0) {
+        printf("Invalid input. Please enter a positive integer for the size of the array.\n");
+        return 1; // Exit the program with an error code
+    }
+    
     int arr[size];
     input(arr,size);
     sortArray(arr,size);
