@@ -1,0 +1,25 @@
+mport java.util.Scanner;
+public class nearestPalindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        for( int i =n;true;i++){
+            int rev=0;
+            int num=i;
+            while(i!=0){
+                int d =i%10;
+                rev=rev*10+d;
+                num=num/10;
+            }if (rev==num){
+                System.out.println(+rev);
+                break;
+            }
+
+        }
+        System.out.println("found");
+
+    }
+
+}
+
+
