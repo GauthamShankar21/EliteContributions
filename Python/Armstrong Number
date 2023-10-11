@@ -1,11 +1,14 @@
-num = int(input('enter the nuber'))
+num = int(input('Enter the number: '))
 s = 0
 temp = num
-while temp &amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt; 0:
-c = temp % 10
-s += c**3
-temp //= 10
+n = len(str(num))  # Number of digits in num
+
+while temp > 0:
+    c = temp % 10
+    s += c ** n
+    temp //= 10
+
 if s == num:
-print('armstrong number')
+    print('Armstrong number')
 else:
-print('not an armstrong number')
+    print('Not an Armstrong number')
