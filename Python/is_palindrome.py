@@ -1,7 +1,3 @@
-# fn to check whether string is palindrome
-# Time Complexity = O(n) and Space Complexity = O(1)
-
-
 def is_palindrome(string1):
     low = 0
     high = len(string1) - 1
@@ -13,9 +9,8 @@ def is_palindrome(string1):
             high -= 1
     return True
 
-
 # Driver's Code
-string1 = "Abcba"
+string1 = input("Enter a string to check if it's a palindrome: ")
 
 if is_palindrome(string1):
     print("String is palindrome")
