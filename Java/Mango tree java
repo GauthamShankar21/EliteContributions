@@ -1,0 +1,24 @@
+public class MangoTree {
+    public static boolean isMangoTree(int[][] garden, int row, int col) {
+        // Check if the given position has a mango tree
+        return (row % 2 == 0 && col % 2 == 0) || (row % 2 == 1 && col % 2 == 1);
+    }
+
+    public static void main(String[] args) {
+        int[][] garden = {
+            {1, 2, 3, 4},
+            {5, 6, 7, 8},
+            {9, 10, 11, 12},
+            {13, 14, 15, 16}
+        };
+        
+        int row = 2; // Row index of the tree to check
+        int col = 2; // Column index of the tree to check
+
+        if (isMangoTree(garden, row, col)) {
+            System.out.println("The tree at (" + row + ", " + col + ") is a mango tree.");
+        } else {
+            System.out.println("The tree at (" + row + ", " + col + ") is not a mango tree.");
+        }
+    }
+}
