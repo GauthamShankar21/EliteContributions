@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Calculator{
 
 	public static void main(String[]args){
-	int num1, num2,largest,smallest;
+	int num1, num2,num3,largest,smallest;
 	Scanner num = new Scanner(System.in);
 
 	System.out.println("Enter first number:");
@@ -20,5 +20,11 @@ public class Calculator{
 	System.out.println("largest number is:"+largest);
 	smallest=(num1<num2)?num1:num2;
 	System.out.println("Smallest number is:"+smallest);
+
+	System.out.println("Enter a new number to check if greater than larger number:");
+		num3=num.nextInt();
+		largest=(num3>largest)?num3:largest;
+		System.out.println("Now the largest number is:"+largest);
+		
 	}
 }
