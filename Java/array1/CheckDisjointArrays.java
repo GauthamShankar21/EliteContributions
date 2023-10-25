@@ -1,15 +1,15 @@
+package array1;
+
 public class CheckDisjointArrays {
 
-    int checkForDisjointArrays(int size1, int arr1[], int size2, int arr2[])
-    {
+    int checkForDisjointArrays(int size1, int arr1[], int size2, int arr2[]) {
         int i;
 
-        for(i = 0; i < size1; i++)
+        for (i = 0; i < size1; i++)
             insert(arr1[i]);
 
-        for(i = 0; i < size2; i++)
-        {
-            if(search(arr2[i]) == 1)
+        for (i = 0; i < size2; i++) {
+            if (search(arr2[i]) == 1)
                 return 0;
         }
 
@@ -20,24 +20,20 @@ public class CheckDisjointArrays {
     int size = 13;
     int arr[] = new int[size];
 
-    void init()
-    {
+    void init() {
         int i;
-        for(i = 0; i < size; i++)
+        for (i = 0; i < size; i++)
             arr[i] = -1;
     }
 
-    int insert(int value)
-    {
+    int insert(int value) {
         int key = value % size;
         int index = key;
 
-        while(arr[index] != -1)
-        {
+        while (arr[index] != -1) {
             index = (index + 1) % size;
 
-            if(index == key)
-            {
+            if (index == key) {
                 System.out.print("Hash Table Full\n");
                 return 0;
             }
@@ -48,16 +44,14 @@ public class CheckDisjointArrays {
         return 1;
     }
 
-    int search(int value)
-    {
+    int search(int value) {
         int key = value % size;
         int index = key;
 
-        while(arr[index] != value)
-        {
+        while (arr[index] != value) {
             index = (index + 1) % size;
 
-            if(index == key)
+            if (index == key)
                 return 0;
         }
 
@@ -67,8 +61,8 @@ public class CheckDisjointArrays {
     public static void main(String[] args) {
         CheckDisjointArrays obj = new CheckDisjointArrays();
 
-        int arr1[] = {10, 14, 15, 18, 50};
-        int arr2[] = {30, 60, 90};
+        int arr1[] = { 10, 14, 15, 18, 50 };
+        int arr2[] = { 30, 60, 90 };
 
         obj.init();
 
@@ -78,8 +72,8 @@ public class CheckDisjointArrays {
             System.out.print("0 ");
         }
 
-        int arr3[] = {19, 56, 50, 100};
-        int arr4[] = {100, 200, 300, 400};
+        int arr3[] = { 19, 56, 50, 100 };
+        int arr4[] = { 100, 200, 300, 400 };
 
         obj.init();
 
@@ -89,8 +83,8 @@ public class CheckDisjointArrays {
             System.out.print("0 ");
         }
 
-        int arr5[] = {1, 2, 3};
-        int arr6[] = {1, 2, 3};
+        int arr5[] = { 1, 2, 3 };
+        int arr6[] = { 1, 2, 3 };
 
         obj.init();
 
@@ -100,8 +94,8 @@ public class CheckDisjointArrays {
             System.out.print("0 ");
         }
 
-        int arr7[] = {3, 6, 9, 12, 15, 18};
-        int arr8[] = {4, 8, 16};
+        int arr7[] = { 3, 6, 9, 12, 15, 18 };
+        int arr8[] = { 4, 8, 16 };
 
         obj.init();
 
@@ -111,8 +105,8 @@ public class CheckDisjointArrays {
             System.out.print("0 ");
         }
 
-        int arr9[] = {90, 100, 190, 200};
-        int arr10[] = {100, 200, 90, 190};
+        int arr9[] = { 90, 100, 190, 200 };
+        int arr10[] = { 100, 200, 90, 190 };
 
         obj.init();
 
