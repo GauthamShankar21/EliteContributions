@@ -3,7 +3,7 @@ import java.util.LinkedList;
 class FordFulkerson {
   static final int V = 6;
 
-  // Using BFS as a searching algorithm 
+  // Using BFS as a searching algorithm
   boolean bfs(int Graph[][], int s, int t, int p[]) {
     boolean visited[] = new boolean[V];
     for (int i = 0; i < V; ++i)
@@ -42,7 +42,7 @@ class FordFulkerson {
 
     int max_flow = 0;
 
-    # Updating the residual calues of edges
+    // Updating the residual calues of edges
     while (bfs(Graph, s, t, p)) {
       int path_flow = Integer.MAX_VALUE;
       for (v = t; v != s; v = p[v]) {
