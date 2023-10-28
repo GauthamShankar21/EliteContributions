@@ -1,6 +1,6 @@
 # Hangman Game in C++
 
-Welcome to the Hangman game in C++! This console-based game challenges you to guess a word one letter at a time. You have 6 attempts to guess the word, and if you run out of attempts, you lose.
+Welcome to the Hangman game in C++! This console-based game challenges you to guess a word one letter at a time. You have 5 attempts to guess the word, and if you run out of attempts, you lose.
 
 ## How to Play
 
@@ -18,7 +18,7 @@ Welcome to the Hangman game in C++! This console-based game challenges you to gu
 
 ## Rules
 
-- You have 6 attempts to guess the word.
+- You have 5 attempts to guess the word.
 - You can only guess one letter at a time.
 - If you guess a letter that is in the word, it will be revealed in the hidden word.
 - If you guess a letter that is not in the word, you will lose an attempt.
@@ -27,6 +27,55 @@ Welcome to the Hangman game in C++! This console-based game challenges you to gu
 ## Customize the Word List
 
 You can customize the list of words and hints in the C++ code by editing the `wordList` vector in the source code. Add or remove words and hints to make the game more interesting.
+
+## Hangman Stages
+
+Here are the stages of the Hangman ASCII art used in the game:
+
+```
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+========
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+========
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+```
 
 ## Acknowledgments
 
