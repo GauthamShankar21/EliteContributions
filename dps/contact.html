@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>DPS | CONTACT</title>
 		<meta charset="utf-8" />
@@ -41,12 +41,13 @@
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="email" name="Email"  required autocomplete="off"/>
+												<input type="email" id="email" name="email" required autocomplete="off"/>
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="Message"  rows="6" required autocomplete="off"></textarea>
+												<textarea name="message" id="message" rows="6" required autocomplete="off"></textarea>
 											</div>
+
 										</div>
 										<ul class="actions">
 											<li><input type="submit" value="Send Message" class="primary" /></li>
@@ -106,7 +107,7 @@
 
 		<script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxUBmnwOTKAojhFIGGy9E7uDlB2qSUjrH_Cd6ObNOiHseeoWU9-SZN0T2q8sJckvOEY/exec'
-      const form = document.forms['contact-form']
+      const form = document. Forms['contact-form']
 
       form.addEventListener('submit', e => {
         e.preventDefault()
